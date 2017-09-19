@@ -5,6 +5,7 @@ namespace NYPL\CancelRequestResultConsumer;
 use NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData\CancelRequestResult;
 use NYPL\CancelRequestResultConsumer\Model\Exception\NonRetryableException;
 use NYPL\CancelRequestResultConsumer\Model\Exception\RetryableException;
+use NYPL\CancelRequestResultConsumer\OAuthClient\CancelRequestClient;
 use NYPL\Starter\APILogger;
 use NYPL\Starter\Listener\Listener;
 use NYPL\Starter\Listener\ListenerEvent;
@@ -60,7 +61,9 @@ class CancelRequestResultConsumerListener extends Listener
      */
     protected function patchCancelRequestService(CancelRequestResult $cancelRequestResult)
     {
-        $cancelRequestService = CancelRequestClient::patchCancelRequestById(
+        $cancelRequestClient = new CancelRequestClient();
+        $cancelRequestService = $cancelRequestClient->patchCancelRequestById
+        (
             $cancelRequestResult->getCancelRequestId(),
             true,
             $cancelRequestResult->isSuccess()
