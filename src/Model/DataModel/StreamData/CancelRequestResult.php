@@ -11,9 +11,9 @@ use NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData;
 class CancelRequestResult extends StreamData
 {
     /**
-     * @var string
+     * @var string | null
      */
-    public $jobId = '';
+    public $jobId;
 
     /**
      * @var bool
@@ -31,17 +31,17 @@ class CancelRequestResult extends StreamData
     public $error;
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getJobId(): string
+    public function getJobId()
     {
         return $this->jobId;
     }
 
     /**
-     * @param string $jobId
+     * @param null|string $jobId
      */
-    public function setJobId(string $jobId)
+    public function setJobId($jobId)
     {
         $this->jobId = $jobId;
     }
