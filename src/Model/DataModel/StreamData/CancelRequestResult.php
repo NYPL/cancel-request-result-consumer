@@ -3,7 +3,6 @@
 namespace NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData;
 
 use NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData;
-use NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData\Error;
 
 /**
  * Class CancelRequestResult
@@ -93,5 +92,14 @@ class CancelRequestResult extends StreamData
     public function setError($error)
     {
         $this->error = $error;
+    }
+
+    /**
+     * @param $data
+     * @return null|Error
+     */
+    public function translateError($data)
+    {
+        return new Error($data, true);
     }
 }

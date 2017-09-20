@@ -2,7 +2,7 @@
 
 namespace NYPL\CancelRequestResultConsumer\OAuthClient;
 
-use NYPL\CancelRequestResultConsumer\Model\DataModel\CancelRequest;
+use NYPL\CancelRequestResultConsumer\Model\DataModel\RecapHoldRequest;
 use NYPL\Starter\APIClient;
 use NYPL\Starter\APILogger;
 use NYPL\Starter\Config;
@@ -23,7 +23,7 @@ class CancelRequestClient extends APIClient
      * @param int $cancelRequestId
      * @param bool $processed
      * @param bool $success
-     * @return null|CancelRequest
+     * @return null|RecapHoldRequest
      */
     public function patchCancelRequestById(int $cancelRequestId, bool $processed, bool $success)
     {
@@ -44,7 +44,7 @@ class CancelRequestClient extends APIClient
         APILogger::addDebug('Patched cancel request by Id', $response['data']);
 
         if ($statusCode === 200) {
-            return new CancelRequest($response['data']);
+            return new RecapHoldRequest($response['data']);
         } else {
             APILogger::addError(
                 'Failed',

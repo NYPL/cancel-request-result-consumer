@@ -1,11 +1,11 @@
 <?php
 
-namespace NYPL\HoldRequestResultConsumer\Model\DataModel\StreamData;
+namespace NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData;
 
 use NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData;
 
 /**
- * Error message object found in Cancel Request Result
+ * Class Error
  * @package NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData
  */
 class Error extends StreamData
