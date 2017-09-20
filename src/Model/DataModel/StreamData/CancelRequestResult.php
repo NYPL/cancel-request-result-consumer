@@ -3,7 +3,7 @@
 namespace NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData;
 
 use NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData;
-use NYPL\HoldRequestResultConsumer\Model\DataModel\StreamData\Error;
+use NYPL\CancelRequestResultConsumer\Model\DataModel\StreamData\Error;
 
 /**
  * Class CancelRequestResult
