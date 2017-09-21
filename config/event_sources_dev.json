@@ -1,0 +1,10 @@
+{
+  "EventSourceMappings": [
+    {
+      "EventSourceArn": "Arn for CancelRequestResult on sandbox",
+      "StartingPosition": "LATEST",
+      "BatchSize": 5,
+      "Enabled": true
+    }
+  ]
+}
