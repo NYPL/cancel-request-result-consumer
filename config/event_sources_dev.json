@@ -1,7 +1,7 @@
 {
   "EventSourceMappings": [
     {
-      "EventSourceArn": "Arn for CancelRequestResult on sandbox",
+      "EventSourceArn": "arn:aws:kinesis:us-east-1:224280085904:stream/CancelRequestResult-development",
       "StartingPosition": "LATEST",
       "BatchSize": 5,
       "Enabled": true
