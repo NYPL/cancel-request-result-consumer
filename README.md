@@ -96,4 +96,4 @@ npm run deploy-production
 ~~~~
 
 ## For more information
-Please see this repo's [Wiki](https://github.com/NYPL/hold-request-result-consumer/wiki)
+Please see this repo's [Wiki](https://github.com/NYPL/cancel-request-result-consumer/wiki)
