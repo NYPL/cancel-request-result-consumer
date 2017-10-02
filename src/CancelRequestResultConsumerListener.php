@@ -68,7 +68,7 @@ class CancelRequestResultConsumerListener extends Listener
             true,
             $cancelRequestResult->isSuccess()
         );
-        APILogger::addDebug('Cancel Request Service patched', (array)$cancelRequestService);
+        APILogger::addInfo('Cancel Request Service patched', (array)$cancelRequestService);
     }
 
     protected function processListenerEvents()
