@@ -24,6 +24,16 @@ class ClientHelper extends APIClient
     }
 
     /**
+     * Implements NYPL\Starter\APIClient::isRequiresJSON()
+     *
+     * @return bool
+     */
+    protected function isRequiresJSON()
+    {
+        return true;
+    }
+
+    /**
      * @param string $url
      * @param string $sourceFunction
      * @return \Psr\Http\Message\ResponseInterface
