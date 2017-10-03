@@ -96,7 +96,7 @@ class ClientHelper extends APIClient
             APILogger::addDebug('Response from patchResponse ', array($response));
             return $response;
         } catch (ServerException $exception) {
-            throw new NonRetryableException(
+            throw new RetryableException(
                 'Server Error from ' . $sourceFunction . ' ' . $exception->getMessage(),
                 'Server Error from ' . $sourceFunction . ' ' . $exception->getMessage(),
                 $exception->getResponse()->getStatusCode(),
