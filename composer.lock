@@ -639,16 +639,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.21.0",
+            "version": "1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952"
+                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f42fbdfd53e306bda545845e4dbfd3e72edb4952",
-                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
+                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
                 "shasum": ""
             },
             "require": {
@@ -659,7 +659,7 @@
                 "psr/log-implementation": "1.0.0"
             },
             "require-dev": {
-                "aws/aws-sdk-php": "^2.4.9",
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
                 "jakub-onderka/php-parallel-lint": "0.9",
@@ -669,7 +669,7 @@
                 "phpunit/phpunit-mock-objects": "2.3.0",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "sentry/sentry": "^0.13",
-                "swiftmailer/swiftmailer": "~5.3"
+                "swiftmailer/swiftmailer": "^5.3|^6.0"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
@@ -713,7 +713,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-07-29T03:23:52+00:00"
+            "time": "2017-06-19T01:22:40+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -815,23 +815,23 @@
         },
         {
             "name": "nypl/microservice-starter",
-            "version": "1.1.20",
+            "version": "1.1.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NYPL/php-microservice-starter.git",
-                "reference": "edb83747eca1b52c71bce05b9379ef28598a397b"
+                "reference": "b405762de05a5e87828c4fb832221848b2e8b319"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NYPL/php-microservice-starter/zipball/edb83747eca1b52c71bce05b9379ef28598a397b",
-                "reference": "edb83747eca1b52c71bce05b9379ef28598a397b",
+                "url": "https://api.github.com/repos/NYPL/php-microservice-starter/zipball/b405762de05a5e87828c4fb832221848b2e8b319",
+                "reference": "b405762de05a5e87828c4fb832221848b2e8b319",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "3.31.4",
                 "danielstjules/stringy": "2.3.2",
                 "guzzlehttp/guzzle": "6.2.3",
-                "monolog/monolog": "1.21.0",
+                "monolog/monolog": "1.23.0",
                 "slim/pdo": "1.9.9",
                 "slim/slim": "3.5.0",
                 "vlucas/phpdotenv": "2.4.0",
@@ -853,7 +853,7 @@
                 }
             ],
             "description": "NYPL Microservice Starter",
-            "time": "2017-09-21T19:27:49+00:00"
+            "time": "2017-10-02T15:59:20+00:00"
         },
         {
             "name": "pimple/pimple",

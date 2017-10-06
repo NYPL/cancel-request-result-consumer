@@ -1,0 +1,17 @@
+{
+  "data": {
+    "id": 713,
+    "jobId": "7094599c8d3531520",
+    "processed": false,
+    "success": true,
+    "createdDate": "2017-08-22T00:00:00-04:00",
+    "updatedDate": "2017-10-04T16:53:57-04:00",
+    "trackingId": null,
+    "itemBarcode": "33433008583555",
+    "patronBarcode": "23333085612479",
+    "owningInstitutionId": "NYPL"
+  },
+  "count": 1,
+  "statusCode": 200,
+  "debugInfo": []
+}
