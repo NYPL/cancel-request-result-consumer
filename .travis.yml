@@ -1,0 +1,14 @@
+language: php
+php:
+- 7.1
+script:
+- composer update
+- vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+after_success:
+- vendor/bin/coveralls -v
+- vendor/bin/phpcs -n --standard=PSR1,PSR2 src/
+- vendor/bin/phpcbf src/
+notifications:
+  slack:
+    rooms:
+      secure: XJznAWq3Utw5DM9xLfMOv4neZOJmAYbp7LvwMyg0Ha9aJdNFTjrWSr32QO2OttLRghseFm5WZ6Y/Y93hkb3onijpDLlAHbtofjZwoltLryjHU7vWwpaLHL51ii3xK2+R73K0O8Aw/QyTWnStz1snqm101FYl0u0Xc20WATXN3adO7fcLwNSWdH2hxV4MiF5QuzTl4bHNrFROQjSrv6wZ4pkt7Wfdg8WfogvsOcZSzY1Izry+iFRbnG3gHO4CVcJfcm+Upnu2TaSjxd5yQdq8oHuYEBKkL0kZ3OVp1XDtXZ0jDS4RyPi6s3ih6TDd9Fo5lnXQkStFxmRsm1dU8nuEOda13SoO43TkZD95tb03ANIFt88ZC3mYUWHLPymdgVMKHNdr59Ag7LsKwFPBUjGOTU3GCaiSSNkiuP+MlhQu4l3hFtgP1Yz5iMiEu+kDf3PI2Q60nf5Azh3eMhs8u/k+9hHQTxWDVtkk+HNhelR3F1H0Z7zjgmPucEia917MKnHc23/O3kEnGGpgPpY5F0tilK+l8VslsaulhmZv/gZb51TLmPR+eOo+LLLKNZ2EXjqCz1+8uR5Ow9TTcZ9wp4WfxLNw5j9jZGDRzeOQjDebhG8PhFu3EJjVhlHRqDbEhDY6YI5b84VRndBQfYO24CewHe/nJ03A1YG+VKhUBYxKSTo=
