@@ -46,7 +46,7 @@ class CancelRequestResultConsumerListenerTest extends TestCase
     {
         parent::setUp();
 
-        MockConfig::initialize( __DIR__ . '/../../');
+        MockConfig::initialize( __DIR__ . '/../');
 
         $this->fakeListenerData = MockListenerData::getListenerData();
 
