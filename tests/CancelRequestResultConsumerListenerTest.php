@@ -145,7 +145,6 @@ class CancelRequestResultConsumerListenerTest extends TestCase
             'setListenerEvents',
             array($this->fakeKinesisEvents)
         );
-        
         $this->assertInstanceOf(
             'NYPL\Starter\Listener\ListenerResult',
             $this->invokeMethod(
