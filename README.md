@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/NYPL/cancel-request-result-consumer.svg?branch=master)](https://travis-ci.org/NYPL/cancel-request-result-consumer)
-
-[![Coverage Status](https://coveralls.io/repos/github/NYPL/cancel-request-result-consumer/badge.svg?branch=master)](https://coveralls.io/github/NYPL/cancel-request-result-consumer?branch=master)
+[![Build Status](https://travis-ci.org/NYPL/cancel-request-result-consumer.svg?branch=master)](https://travis-ci.org/NYPL/cancel-request-result-consumer) [![Coverage Status](https://coveralls.io/repos/github/NYPL/cancel-request-result-consumer/badge.svg?branch=master)](https://coveralls.io/github/NYPL/cancel-request-result-consumer?branch=master)
 
 # NYPL Cancel Request Result Consumer
 
