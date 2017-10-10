@@ -1,0 +1,50 @@
+{
+  "data": {
+    "id": 298,
+    "offsetBegin": 0,
+    "offsetEnd": 0,
+    "schemaObject": {
+      "name": "CancelRequestResult",
+      "type": "record",
+      "fields": [
+        {
+          "name": "jobId",
+          "type": "string"
+        },
+        {
+          "name": "success",
+          "type": "boolean"
+        },
+        {
+          "name": "error",
+          "type": [
+            "null",
+            {
+              "name": "Error",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "message",
+                  "type": "string"
+                },
+                {
+                  "name": "type",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cancelRequestId",
+          "type": "int"
+        }
+      ]
+    },
+    "stream": "CancelRequestResult",
+    "schema": "{\n  \"name\": \"CancelRequestResult\",\n  \"type\": \"record\",\n  \"fields\": [\n    {\n      \"name\": \"jobId\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"success\",\n      \"type\": \"boolean\"\n    },\n    {\n      \"name\": \"error\",\n      \"type\": [\n        \"null\",\n        {\n          \"name\": \"Error\",\n          \"type\": \"record\",\n          \"fields\": [\n            {\n              \"name\": \"message\",\n              \"type\": \"string\"\n            },\n            {\n              \"name\": \"type\",\n              \"type\": \"string\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"cancelRequestId\",\n      \"type\": \"int\"\n    }\n  ]\n}"
+  },
+  "count": 1,
+  "statusCode": 200,
+  "debugInfo": []
+}
