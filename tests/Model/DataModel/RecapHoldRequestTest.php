@@ -74,6 +74,15 @@ class RecapHoldRequestTest extends TestCase
     /**
      * @covers \NYPL\CancelRequestResultConsumer\Model\DataModel\RecapHoldRequest
      */
+    public function testCreatedDateCanBeString()
+    {
+        $this->fakeRecapHoldRequest->setCreatedDate('not really a date');
+        $this->assertEquals('not really a date', $this->fakeRecapHoldRequest->getCreatedDate());
+    }
+
+    /**
+     * @covers \NYPL\CancelRequestResultConsumer\Model\DataModel\RecapHoldRequest
+     */
     public function testUpdatedDateCanBeNull()
     {
         $this->fakeRecapHoldRequest->setUpdatedDate(null);
