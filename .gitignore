@@ -1,8 +1,9 @@
 node_modules
 dist
 *.swp
-*.env
+.env
 vendor
 build
 .lambda
 .idea
+config/var_app
