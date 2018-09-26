@@ -19,8 +19,6 @@ This package adheres to [PSR-1](http://www.php-fig.org/psr/psr-1/),
 
 Homebrew is highly recommended for PHP:
   * `brew install php71`
-  * `brew install php71-pdo-pgsql`
-  
 
 ## Installation
 
