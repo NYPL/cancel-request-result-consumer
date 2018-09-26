@@ -62,10 +62,10 @@ class MockConfig extends Config
             $dotEnv->load();
         }
 
-        // if (file_exists(self::getConfigDirectory() . '/config/' . self::GLOBAL_ENVIRONMENT_FILE)) {
-        //     $dotEnv = new Dotenv(self::getConfigDirectory() . '/config', self::GLOBAL_ENVIRONMENT_FILE);
-        //     $dotEnv->load();
-        // }
+        if (file_exists(self::getConfigDirectory() . '/config/' . self::GLOBAL_ENVIRONMENT_FILE)) {
+            $dotEnv = new Dotenv(self::getConfigDirectory() . '/config', self::GLOBAL_ENVIRONMENT_FILE);
+            $dotEnv->load();
+        }
 
         $dotEnv->required(self::getRequired());
 
