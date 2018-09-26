@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6558da930b66b035030284f0d9249924",
+    "content-hash": "24a3b43dc53522a6c8ae222dea77fc03",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -639,16 +639,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.23.0",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4"
+                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
-                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f42fbdfd53e306bda545845e4dbfd3e72edb4952",
+                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952",
                 "shasum": ""
             },
             "require": {
@@ -659,7 +659,7 @@
                 "psr/log-implementation": "1.0.0"
             },
             "require-dev": {
-                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "aws/aws-sdk-php": "^2.4.9",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
                 "jakub-onderka/php-parallel-lint": "0.9",
@@ -669,7 +669,7 @@
                 "phpunit/phpunit-mock-objects": "2.3.0",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "sentry/sentry": "^0.13",
-                "swiftmailer/swiftmailer": "^5.3|^6.0"
+                "swiftmailer/swiftmailer": "~5.3"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
@@ -713,7 +713,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19T01:22:40+00:00"
+            "time": "2016-07-29T03:23:52+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -818,23 +818,23 @@
         },
         {
             "name": "nypl/microservice-starter",
-            "version": "1.2.29",
+            "version": "1.1.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NYPL/php-microservice-starter.git",
-                "reference": "dcf52bb24fa5d11636da50f2c2cf23c833fda8ca"
+                "reference": "658bb14d21b8fc647e36fd8af0f84c874a8b4774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NYPL/php-microservice-starter/zipball/dcf52bb24fa5d11636da50f2c2cf23c833fda8ca",
-                "reference": "dcf52bb24fa5d11636da50f2c2cf23c833fda8ca",
+                "url": "https://api.github.com/repos/NYPL/php-microservice-starter/zipball/658bb14d21b8fc647e36fd8af0f84c874a8b4774",
+                "reference": "658bb14d21b8fc647e36fd8af0f84c874a8b4774",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "3.31.4",
                 "danielstjules/stringy": "2.3.2",
                 "guzzlehttp/guzzle": "6.2.3",
-                "monolog/monolog": "1.23.0",
+                "monolog/monolog": "1.21.0",
                 "slim/pdo": "1.9.9",
                 "slim/slim": "3.5.0",
                 "vlucas/phpdotenv": "2.4.0",
@@ -856,7 +856,7 @@
                 }
             ],
             "description": "NYPL Microservice Starter",
-            "time": "2018-08-31T14:53:47+00:00"
+            "time": "2017-09-07T18:33:21+00:00"
         },
         {
             "name": "pimple/pimple",
