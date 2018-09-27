@@ -49,9 +49,9 @@ Configures `npm run` commands for each environment for deployment and testing. D
  
 ~~~~
 "scripts": {
-    "deploy-dev": "./node_modules/.bin/node-lambda deploy -e development -f config/var_dev.env -S config/event_sources_dev.json -b subnet-f4fe56af -g sg-1d544067 --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
-    "deploy-qa": "./node_modules/.bin/node-lambda deploy -e qa -f config/var_qa.env -S config/event_sources_qa.json -b subnet-f4fe56af -g sg-1d544067 --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
-    "deploy-production": "./node_modules/.bin/node-lambda deploy -e production -f config/var_production.env -S config/event_sources_production.json -g sg-116eeb60 --profile nypl-digital-dev --role arn:aws:iam::946183545209:role/lambda-full-access",
+    "deploy-dev": "./node_modules/.bin/node-lambda deploy -e development -f config/var_dev.env -S config/event_sources_dev.json --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
+    "deploy-qa": "./node_modules/.bin/node-lambda deploy -e qa -f config/var_qa.env -S config/event_sources_qa.json --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
+    "deploy-production": "./node_modules/.bin/node-lambda deploy -e production -f config/var_production.env -S config/event_sources_production.json --profile nypl-digital-dev --role arn:aws:iam::946183545209:role/lambda-full-access",
     "test-event": "./node_modules/.bin/node-lambda run -f config/var_app -j events/kinesis_hold_edd_success.json -x events/context.json"
   },
 ~~~~
@@ -79,6 +79,15 @@ npm run test-event
 ~~~~
 
 ## Deployment
+
+The branches and the environments they are deployed to:
+
+| Branch      | Environment | AWS Account     |
+|:------------|:------------|:----------------|
+| development | development | aws-sandbox     |
+| qa          | qa          | aws-digital-dev |
+| master      | production  | aws-digital-dev |
+
 
 To deploy to the QA or Production environment, run the corresponding command:
 
