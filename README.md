@@ -88,10 +88,10 @@ The branches and the environments they are deployed to:
 | qa          | qa          | aws-digital-dev |
 | master      | production  | aws-digital-dev |
 
-To deploy to the QA or Production environment, run the corresponding command:
+To deploy to the Development, QA or Production environment, run the corresponding command. For exampe,
 
 ~~~~
-npm run deploy-qa
+npm run deploy-dev
 ~~~~
 
 or
@@ -99,6 +99,8 @@ or
 ~~~~
 npm run deploy-production
 ~~~~
+
+Alternatively, if either development, qa, or master branch is pushed to the remote, Travis will be triggered and deploy the branch to the environment respectively.
 
 ## For more information
 Please see this repo's [Wiki](https://github.com/NYPL/cancel-request-result-consumer/wiki)
