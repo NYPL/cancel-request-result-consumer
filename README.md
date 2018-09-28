@@ -49,7 +49,7 @@ Configures `npm run` commands for each environment for deployment and testing. D
  
 ~~~~
 "scripts": {
-    "deploy-dev": "./node_modules/.bin/node-lambda deploy -e development -f config/var_dev.env -S config/event_sources_dev.json --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
+    "deploy-development": "./node_modules/.bin/node-lambda deploy -e development -f config/var_development.env -S config/event_sources_development.json --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
     "deploy-qa": "./node_modules/.bin/node-lambda deploy -e qa -f config/var_qa.env -S config/event_sources_qa.json --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
     "deploy-production": "./node_modules/.bin/node-lambda deploy -e production -f config/var_production.env -S config/event_sources_production.json --profile nypl-digital-dev --role arn:aws:iam::946183545209:role/lambda-full-access",
     "test-event": "./node_modules/.bin/node-lambda run -f config/var_app -j events/kinesis_hold_edd_success.json -x events/context.json"
@@ -91,7 +91,7 @@ The branches and the environments they are deployed to:
 To deploy to the Development, QA or Production environment, run the corresponding command. For exampe,
 
 ~~~~
-npm run deploy-dev
+npm run deploy-development
 ~~~~
 
 or
