@@ -82,11 +82,11 @@ npm run test-event
 
 The branches and the environments they are deployed to:
 
-| Branch      | Environment | AWS Account     |
-|:------------|:------------|:----------------|
-| development | development | aws-sandbox     |
-| qa          | qa          | aws-digital-dev |
-| master      | production  | aws-digital-dev |
+| Branch      | Environment | AWS Account      |
+|:------------|:------------|:-----------------|
+| development | development | nypl-sandbox     |
+| qa          | qa          | nypl-digital-dev |
+| master      | production  | nypl-digital-dev |
 
 To deploy to the Development, QA or Production environment, run the corresponding command. For exampe,
 
