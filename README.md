@@ -19,8 +19,6 @@ This package adheres to [PSR-1](http://www.php-fig.org/psr/psr-1/),
 
 Homebrew is highly recommended for PHP:
   * `brew install php71`
-  * `brew install php71-pdo-pgsql`
-  
 
 ## Installation
 
@@ -51,9 +49,9 @@ Configures `npm run` commands for each environment for deployment and testing. D
  
 ~~~~
 "scripts": {
-    "deploy-dev": "./node_modules/.bin/node-lambda deploy -e development -f config/var_dev.env -S config/event_sources_dev.json -b subnet-f4fe56af -g sg-1d544067 --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
-    "deploy-qa": "./node_modules/.bin/node-lambda deploy -e qa -f config/var_qa.env -S config/event_sources_qa.json -b subnet-f4fe56af -g sg-1d544067 --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
-    "deploy-production": "./node_modules/.bin/node-lambda deploy -e production -f config/var_production.env -S config/event_sources_production.json -g sg-116eeb60 --profile nypl-digital-dev --role arn:aws:iam::946183545209:role/lambda-full-access",
+    "deploy-development": "./node_modules/.bin/node-lambda deploy -e development -f config/var_development.env -S config/event_sources_development.json --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
+    "deploy-qa": "./node_modules/.bin/node-lambda deploy -e qa -f config/var_qa.env -S config/event_sources_qa.json --profile nypl-sandbox --role arn:aws:iam::224280085904:role/lambda_basic_execution",
+    "deploy-production": "./node_modules/.bin/node-lambda deploy -e production -f config/var_production.env -S config/event_sources_production.json --profile nypl-digital-dev --role arn:aws:iam::946183545209:role/lambda-full-access",
     "test-event": "./node_modules/.bin/node-lambda run -f config/var_app -j events/kinesis_hold_edd_success.json -x events/context.json"
   },
 ~~~~
@@ -82,10 +80,18 @@ npm run test-event
 
 ## Deployment
 
-To deploy to the QA or Production environment, run the corresponding command:
+The branches and the environments they are deployed to:
+
+| Branch      | Environment | AWS Account      |
+|:------------|:------------|:-----------------|
+| development | development | nypl-sandbox     |
+| qa          | qa          | nypl-digital-dev |
+| master      | production  | nypl-digital-dev |
+
+To deploy to the Development, QA or Production environment, run the corresponding command. For exampe,
 
 ~~~~
-npm run deploy-qa
+npm run deploy-development
 ~~~~
 
 or
@@ -93,6 +99,8 @@ or
 ~~~~
 npm run deploy-production
 ~~~~
+
+Alternatively, if either development, qa, or master branch is pushed to the remote, Travis will be triggered and deploy the branch to the environment respectively.
 
 ## For more information
 Please see this repo's [Wiki](https://github.com/NYPL/cancel-request-result-consumer/wiki)
