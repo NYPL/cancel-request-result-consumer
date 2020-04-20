@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/NYPL/cancel-request-result-consumer.svg?branch=master)](https://travis-ci.org/NYPL/cancel-request-result-consumer) [![Coverage Status](https://coveralls.io/repos/github/NYPL/cancel-request-result-consumer/badge.svg?branch=master)](https://coveralls.io/github/NYPL/cancel-request-result-consumer?branch=master)
 
-# NYPL Cancel Request Result Consumer
+# NYPL Cancel Request Result Consumer (DEPRECATED)
+
+Note: This lambda has been deprecated in the latest ["Cancel Architecture"](https://docs.google.com/presentation/d/1uIDmpsKTx-ZJRmUw8Ifspf1gkKBL9sWjVWIR5-b_wag/edit#slide=id.g1f78577fe0_2_0).
 
 This package is intended to be used as a Lambda-based Node.js/PHP Listener to listen to a Kinesis Stream. 
 
